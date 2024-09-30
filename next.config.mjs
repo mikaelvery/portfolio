@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    images: {
+      domains: ['upload.wikimedia.org', 'media.licdn.com'],
+    },
+  };
+  
+  export default nextConfig;
+  
