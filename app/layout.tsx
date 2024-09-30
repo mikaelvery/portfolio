@@ -4,6 +4,7 @@ import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 import { Anek_Telugu } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <body
-        className={`${geistSans.variable, geistMono, AnekTelugu, "font-sans h-full bg-background text-foreground"} antialiased`}
+        className={cn(geistSans.variable, geistMono.variable, AnekTelugu.variable, "font-sans h-full bg-background text-foreground")}
       >
         {children}
       </body>
