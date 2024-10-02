@@ -41,7 +41,7 @@ export const Hero = () => {
                     </Link>
                 </p>
             </div>
-            <div className="flex-[2] max-md:m-auto ml-auto">
+            <div className="flex-[1] max-md:m-auto ml-auto">
                 <Image
                     src="https://media.licdn.com/dms/image/v2/D4E35AQF1tZI8G1LHwg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1722945642571?e=1728306000&v=beta&t=Y82xy_sOCb9PYddxwPL708shyRjmz1BKeXVWI_r11tY"
                     className="w-full h-auto max-w-xs rounded-full max-md:w-56"

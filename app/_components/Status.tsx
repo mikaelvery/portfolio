@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card"
 import { Section } from "./Section"
-import { ArrowUpRight, Code, LucideIcon, MessageCircle, Pizza, Tractor, } from "lucide-react"
+import { ALargeSmall, ArrowUpRight, Code, LucideIcon, MessageCircle, Pizza, Tractor, } from "lucide-react"
 import Link from "next/link";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 export const Status = () => {
     return (
         <Section className="flex max-md:flex-col items-start gap-4">
-            <div className="flex-[3] w-full">
+            <div className="flex-[2] flex flex-col gap-4 w-full">
                 <Card className="w-full p-4 flex flex-col gap-2">
                     <p className="text-lg text-muted-foreground">Side, fun projects.</p>
                     <div className="flex flex-col gap-4">
@@ -36,14 +36,19 @@ export const Status = () => {
                         ))}
                     </div>
                 </Card>
-
-                <Card className="p-4 flex-1">
+                <Card className="p-4 flex-1 flex flex-col gap-2">
                     <p className="text-lg text-muted-foreground">Contact me</p>
                     <ContactCard 
                         name="@mikaelvery" 
                         image="https://media.licdn.com/dms/image/v2/D4E35AQF1tZI8G1LHwg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1722945642571?e=1728306000&v=beta&t=Y82xy_sOCb9PYddxwPL708shyRjmz1BKeXVWI_r11tY"
-                        mediumImage="https://www.habitat44.org/wp-content/uploads/2020/06/53-533322_linked-in-logo-linkedin-logo-png-images-free.jpg" 
+                        mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/900px-LinkedIn_logo_initials.png" 
                         description="66"
+                    />
+                    <ContactCard 
+                        name="@mikaelvery" 
+                        image="https://media.licdn.com/dms/image/v2/D4E35AQF1tZI8G1LHwg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1722945642571?e=1728306000&v=beta&t=Y82xy_sOCb9PYddxwPL708shyRjmz1BKeXVWI_r11tY"
+                        mediumImage="https://img.freepik.com/vecteurs-premium/icone-logo-vectoriel-instagram-logotype-medias-sociaux_901408-390.jpg?semt=ais_hybrid" 
+                        description="300"
                     />
                 </Card>
             </div>
@@ -58,33 +63,35 @@ const ContactCard = (props: {
     description: string,
 }) => {
     return (
-        <Card className="p-3 bg-accent/10">
+        <Card className="p-3 bg-accent/10 hover:bg-accent/30 transition-colors group flex items-center gap-2 cursor-pointer">
             <div className="relative">
                 <Image 
                     src={props.image} 
                     alt={props.name} 
-                    className="w-10 h-10"
+                    className="w-10 h-10 rounded-full object-cover"
                     width={64} 
                     height={64} 
                 />
                 <Image 
                     src={props.mediumImage}
                     alt={props.name} 
-                    className="w4 h-4 absolute -bottom-2 -right-2"
-                    width={64} 
-                    height={64}
+                    className="w-5 h-5 absolute -bottom-1 -right-1 rounded-full object-cover"
+                    width={32} 
+                    height={32}
                 />
             </div>
             <div className="mr-auto">
                 <div className="flex items-center gap-2">
                     <p className="text-lg font-semibold">{props.name}</p>
                 </div>
-            <p className="text-xs text-muted-foreground">{props.description}</p>
+                <p className="text-xs text-muted-foreground">{props.description}</p>
             </div>
-            <ArrowUpRight size={16}/>
+            <ArrowUpRight className="group-hover:translate-x-2 mr-4 group-hover:-translate-y-2 transition-transform" size={16}/>
         </Card>
     )
 }
+
+
 const SIDE_PROJECTS: SideProjectProps[] = [
     {
         Logo: Code,
@@ -107,6 +114,12 @@ const SIDE_PROJECTS: SideProjectProps[] = [
     {
         Logo: MessageCircle,
         title: "PlanningDoctor",
+        description: "Lorem ipsum dolor sit amet, consectetur",
+        url: ""
+    },
+    {
+        Logo: ALargeSmall,
+        title: "KokotBank",
         description: "Lorem ipsum dolor sit amet, consectetur",
         url: ""
     },
