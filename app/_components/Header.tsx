@@ -14,7 +14,7 @@ export const Header = () => {
                     mikaelvery.com
                 </h1>
                 <div className="flex-1" />
-                <ul className="flex itemsècenter gap-2">
+                <ul className="flex items-center gap-2">
                     <Link 
                         href="https://github.com/mikaelvery"
                         className={cn(buttonVariants({ variant:"outline" }), "size-6 p-0")} 
