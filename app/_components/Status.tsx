@@ -106,7 +106,7 @@ const SIDE_PROJECTS: SideProjectProps[] = [
     },
     {
         Logo: MessageCircle,
-        title: "LinkedLeads",
+        title: "PlanningDoctor",
         description: "Lorem ipsum dolor sit amet, consectetur",
         url: ""
     },
