@@ -8,6 +8,7 @@ import { HtmlIcon } from "./icons/HtmlIcon";
 import { TailwindIcon } from "./icons/TailwindIcon";
 import { NodeJsIcon } from "./icons/NodeJsIcon";
 import { CSharpIcon } from "./icons/CSharpIcon";
+import { FlutterIcon } from "./icons/FlutterIcon";
 
 export const Skills = () => {
     return (
@@ -96,6 +97,18 @@ export const Skills = () => {
                     </h3>
                     <p className="text-sm text-muted-foreground">
                         I implemented a real-time messaging microservice using <Code>SignalR</Code> in the <u>ImmoIa</u> project. This feature facilitated instant communication between users, enhancing the back-end infrastructure.
+                    </p>
+                </div>
+                <div className="flex flex-col gap-2 flex-1">
+                    <FlutterIcon 
+                        size={42} 
+                    /> 
+                    <h3 className="mb-2 text-2xl font-semibold tracking-tight">
+                        Flutter
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                        I have developed several applications using <Code>Flutter</Code>,
+                        including a pizzeria application that offers real-time GPS delivery tracking via the Google Maps Web API.
                     </p>
                 </div>
             </div>
