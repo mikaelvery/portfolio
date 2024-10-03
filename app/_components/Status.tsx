@@ -36,18 +36,20 @@ export const Status = () => {
                     </div>
                 </Card>
                 <Card className="p-4 flex-1 flex flex-col gap-2">
-                    <p className="text-lg text-muted-foreground">Contact me</p>
+                    <p className="text-lg text-muted-foreground">Follow me</p>
                     <ContactCard 
-                        name="@mikaelvery" 
+                        url="https://linkedin.com/mikaelvery"
+                        name="Mikael Very" 
                         image="https://media.licdn.com/dms/image/v2/D4E35AQF1tZI8G1LHwg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1722945642571?e=1728306000&v=beta&t=Y82xy_sOCb9PYddxwPL708shyRjmz1BKeXVWI_r11tY"
                         mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/900px-LinkedIn_logo_initials.png" 
-                        description="66"
+                        description="66 contacts"
                     />
                     <ContactCard 
-                        name="@mikaelvery" 
+                        url="mailto:mikael.very34@gmail.com"
+                        name="contact@mikaelvery.com" 
                         image="https://media.licdn.com/dms/image/v2/D4E35AQF1tZI8G1LHwg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1722945642571?e=1728306000&v=beta&t=Y82xy_sOCb9PYddxwPL708shyRjmz1BKeXVWI_r11tY"
-                        mediumImage="https://img.freepik.com/vecteurs-premium/icone-logo-vectoriel-instagram-logotype-medias-sociaux_901408-390.jpg?semt=ais_hybrid" 
-                        description="300"
+                        mediumImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4vtphMtxRWfK6nO2CIbGfSETyEs79Dr6oPw&s" 
+                        description="Email me for any inquiries."
                     />
                 </Card>
             </div>

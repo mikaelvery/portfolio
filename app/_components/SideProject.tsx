@@ -1,10 +1,10 @@
-import { ALargeSmall, Code, LucideIcon, MessageCircle, Pizza, Tractor } from "lucide-react";
+import { Banknote, Code, LucideIcon, Pizza, Tractor } from "lucide-react";
 import Link from "next/link";
 
 export const SIDE_PROJECTS: SideProjectProps[] = [
     {
         Logo: Code,
-        title: "ImmoIa",
+        title: "MicroService rabbitMq",
         description: "Lorem ipsum dolor sit amet, consectetur",
         url: ""
     },
@@ -21,13 +21,13 @@ export const SIDE_PROJECTS: SideProjectProps[] = [
         url: ""
     },
     {
-        Logo: MessageCircle,
+        Logo: Code,
         title: "PlanningDoctor",
         description: "Lorem ipsum dolor sit amet, consectetur",
         url: ""
     },
     {
-        Logo: ALargeSmall,
+        Logo: Banknote,
         title: "KokotBank",
         description: "Lorem ipsum dolor sit amet, consectetur",
         url: ""
