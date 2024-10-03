@@ -1,6 +1,4 @@
-import { ComponentPropsWithRef } from "react";
 import { Section } from "./Section";
-import { cn } from "@/lib/utils";
 import { NextJsIcon } from "./icons/NextJsIcon";
 import Link from "next/link";
 import Image from "next/image";
