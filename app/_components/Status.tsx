@@ -1,8 +1,5 @@
 import { Card } from "@/components/ui/card"
 import { Section } from "./Section"
-import Link from "next/link";
-import Image from "next/image";
-import { Badge } from "@/components/ui/badge";
 import { ContactCard } from "./ContactCard";
 import { SIDE_PROJECTS, SideProject } from "./SideProject";
 import { Work, WORKS } from "./WorkProps";
