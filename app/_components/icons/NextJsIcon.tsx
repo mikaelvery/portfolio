@@ -17,6 +17,5 @@ export const NextJsIcon = (props: ComponentPropsWithoutRef<"svg"> & {size?: numb
                 ></path>
             </g>
         </svg>
-
-    )
-}
+    );
+};

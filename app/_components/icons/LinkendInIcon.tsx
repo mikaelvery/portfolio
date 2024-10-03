@@ -17,6 +17,5 @@ export const LinkedInIcon = (props: ComponentPropsWithoutRef<"svg"> & {size?: nu
                 ></path>
             </g>
         </svg>
-
-    )
-}
+    );
+};

@@ -4,12 +4,7 @@ import { cn } from "@/lib/utils";
 import { NextJsIcon } from "./icons/NextJsIcon";
 import Link from "next/link";
 import Image from "next/image";
-
-const Code = ({ className, ...props }: ComponentPropsWithRef<"span">) => {
-    return (
-        <span className={cn("bg-accent/30 font-mono border hover:bh-accent/50 transition-colors border-accent px-1 py-0.5 text-primary rounded-sm", className)} {...props} />
-    );
-};
+import { Code } from "./Code";
 
 export const Hero = () => {
     return (

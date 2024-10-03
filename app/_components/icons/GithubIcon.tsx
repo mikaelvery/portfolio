@@ -17,6 +17,5 @@ export const GithubIcon = (props: ComponentPropsWithoutRef<"svg"> & {size?: numb
                 ></path>
             </g>
         </svg>
-
-    )
-}
+    );
+};

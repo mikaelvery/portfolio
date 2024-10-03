@@ -24,8 +24,8 @@ body {
     --card-foreground: 219 18% 76%;
     --border: 216 3% 20%;
     --input: 216 3% 23%;
-    --primary: 219 18% 81%;
-    --primary-foreground: 214 13% 30%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 20%;
     --secondary: 219 8% 21%;
     --secondary-foreground: 219 8% 85%;
     --accent: 216 13% 30%;
