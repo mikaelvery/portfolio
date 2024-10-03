@@ -30,9 +30,10 @@ body {
     --secondary-foreground: 180 30% 85%;
     --accent: 200 19% 33%;
     --accent-foreground: 200 19% 93%;
-    --destructive: 3 86% 52%;
+    --destructive: 9 96% 48%;
     --destructive-foreground: 0 0% 100%;
     --ring: 180 100% 97%;
     --radius: 0.5rem;
   }
+
 }

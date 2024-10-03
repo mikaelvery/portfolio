@@ -1,7 +1,7 @@
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { Section } from "./Section";
 import { Linkedin } from "lucide-react";
 import Link from "next/link";
-import { GithubIcon } from "./icons/GithubIcon";
 
 export const Footer = () => {
   return (
@@ -11,7 +11,7 @@ export const Footer = () => {
 
         <div className="flex gap-6">
             <Link href="https://github.com/MikaelVery" target="_blank" rel="noopener noreferrer">
-                <GithubIcon className="w-6 h-6 text-muted-foreground hover:text-foreground transition-colors" />
+                <GitHubLogoIcon className="w-6 h-6 text-muted-foreground hover:text-foreground transition-colors" />
             </Link>
             <Link href="https://www.linkedin.com/in/mikaelvery/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-6 h-6 text-muted-foreground hover:text-foreground transition-colors" />
