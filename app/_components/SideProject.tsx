@@ -5,34 +5,35 @@ export const SIDE_PROJECTS: SideProjectProps[] = [
     {
         Logo: Code,
         title: "MicroService rabbitMq",
-        description: "Lorem ipsum dolor sit amet, consectetur",
+        description: "Microservice architecture using RabbitMQ.",
         url: ""
     },
     {
         Logo: Tractor,
         title: "FarmApp",
-        description: "Lorem ipsum dolor sit amet, consectetur",
+        description: "Manage sheep farm stock and parcels.",
         url: ""
     },
     {
         Logo: Pizza,
         title: "PizzaApp",
-        description: "Lorem ipsum dolor sit amet, consectetur",
+        description: "Order tracking like UberEats.",
         url: ""
     },
     {
         Logo: Code,
         title: "PlanningDoctor",
-        description: "Lorem ipsum dolor sit amet, consectetur",
+        description: "Automated scheduling for healthcare staff.",
         url: ""
     },
     {
         Logo: Banknote,
         title: "KokotBank",
-        description: "Lorem ipsum dolor sit amet, consectetur",
+        description: "Banking application for financial management.",
         url: ""
     },
 ]
+
 type SideProjectProps = {
     Logo: LucideIcon;
     title: string;
