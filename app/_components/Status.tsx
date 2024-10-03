@@ -38,15 +38,17 @@ export const Status = () => {
                 <Card className="p-4 flex-1 flex flex-col gap-2">
                     <p className="text-lg text-muted-foreground">Follow me</p>
                     <ContactCard 
-                        url="https://linkedin.com/mikaelvery"
+                        className="flex-1"
+                        url="https://www.linkedin.com/in/mikaelvery/"
                         name="Mikael Very" 
                         image="https://media.licdn.com/dms/image/v2/D4E35AQF1tZI8G1LHwg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1722945642571?e=1728306000&v=beta&t=Y82xy_sOCb9PYddxwPL708shyRjmz1BKeXVWI_r11tY"
                         mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/900px-LinkedIn_logo_initials.png" 
-                        description="66 contacts"
+                        description="Connect with me on LinkedIn"
                     />
-                    <ContactCard 
+                    <ContactCard
+                        className="flex-1"
                         url="mailto:mikael.very34@gmail.com"
-                        name="contact@mikaelvery.com" 
+                        name="contact@mikaelvery.com"
                         image="https://media.licdn.com/dms/image/v2/D4E35AQF1tZI8G1LHwg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1722945642571?e=1728306000&v=beta&t=Y82xy_sOCb9PYddxwPL708shyRjmz1BKeXVWI_r11tY"
                         mediumImage="https://static.vecteezy.com/system/resources/previews/022/484/516/original/google-mail-gmail-icon-logo-symbol-free-png.png" 
                         description="Email me for any inquiries."
