@@ -6,7 +6,7 @@ export const Contact = () => {
     return (
         <Section className="flex flex-col items-start gap-4">
             <Badge variant={"outline"}>Contact me</Badge>
-            <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+            <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0" style={{ textShadow: "0 0px 10px rgba(0, 255, 255, 0.4)" }}>
                 I will  be happy to work  with you.       
             </h2>
             <div className="flex max-md:flex-col w-full gap-4">

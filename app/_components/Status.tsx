@@ -8,8 +8,8 @@ export const Status = () => {
     return (
         <Section className="flex max-md:flex-col items-start gap-4">
             <div className="flex-[2] flex flex-col gap-4 w-full">
-                <Card className="w-full p-4 flex flex-col gap-2">
-                    <p className="text-lg text-muted-foreground">Side, fun projects.</p>
+                <Card className="w-full p-4 flex flex-col gap-2 shadow-md">
+                    <p className="text-lg text-muted-foreground" style={{ textShadow: "0 0px 10px rgba(0, 255, 255, 0.4)" }}>Side, fun projects.</p>
                     <div className="flex flex-col gap-4">
                         {SIDE_PROJECTS.map((project, index) =>(
                             <SideProject
@@ -24,8 +24,8 @@ export const Status = () => {
                 </Card>
             </div>
             <div className="flex-[2] flex flex-col gap-4 w-full">
-                <Card className="p-4 flex-1">
-                <p className="text-lg text-muted-foreground">Works</p>
+                <Card className="p-4 flex-1 shadow-md">
+                <p className="text-lg text-muted-foreground" style={{ textShadow: "0 0px 10px rgba(0, 255, 255, 0.4)" }}>Works</p>
                 <div className="flex flex-col gap-4">
                         {WORKS.map((work, index) =>(
                             <Work
@@ -35,8 +35,8 @@ export const Status = () => {
                         ))}
                     </div>
                 </Card>
-                <Card className="p-4 flex-1 flex flex-col gap-2">
-                    <p className="text-lg text-muted-foreground">Follow me</p>
+                <Card className="p-4 flex-1 flex flex-col gap-2 shadow-md">
+                    <p className="text-lg text-muted-foreground" style={{ textShadow: "0 0px 10px rgba(0, 255, 255, 0.4)" }}>Follow me</p>
                     <ContactCard 
                         className="flex-1"
                         url="https://www.linkedin.com/in/mikaelvery/"
@@ -48,7 +48,7 @@ export const Status = () => {
                     <ContactCard
                         className="flex-1"
                         url="mailto:mikael.very34@gmail.com"
-                        name="contact@mikaelvery.com"
+                        name="me@mikaelvery.com"
                         image="https://media.licdn.com/dms/image/v2/D4E35AQF1tZI8G1LHwg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1722945642571?e=1728306000&v=beta&t=Y82xy_sOCb9PYddxwPL708shyRjmz1BKeXVWI_r11tY"
                         mediumImage="https://static.vecteezy.com/system/resources/previews/022/484/516/original/google-mail-gmail-icon-logo-symbol-free-png.png" 
                         description="Email me for any inquiries."
