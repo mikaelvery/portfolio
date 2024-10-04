@@ -26,7 +26,7 @@ export const Hero = () => {
                                 alt="france flag"
                             />Montpellier
                         </Code>
-                    </Link>. Let's collaborate on exciting projects!
+                    </Link>. Let&apos;s collaborate on exciting projects!
                 </p>
                 <Link href="/about" className="mt-4">
                     <button className="py-2 px-4 rounded-lg border border-white text-white hover:bg-accent/50 transition-colors text-sm" style={{ textShadow: "0 0 15px rgba(0, 255, 255, 0.6)" }}>
