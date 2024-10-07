@@ -14,6 +14,15 @@ const config: Config = {
 		caption: ["var(--font-caption)"],
 	},
   	extend: {
+		animation: {
+			'gradient': 'gradient 8s linear infinite',
+		},
+		keyframes: {
+			'gradient': {
+				'0%': { 'background-position': '0% center' },
+				'100%': { 'background-position': '200% center' },
+			}
+		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

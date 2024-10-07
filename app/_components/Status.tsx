@@ -9,7 +9,7 @@ export const Status = () => {
         <Section className="flex max-md:flex-col items-start gap-4">
             <div className="flex-[2] flex flex-col gap-4 w-full">
                 <Card className="w-full p-4 flex flex-col gap-2 shadow-md">
-                    <p className="text-lg text-muted-foreground" style={{ textShadow: "0 0px 10px rgba(0, 255, 255, 0.4)" }}>Side, fun projects.</p>
+                    <p className="text-lg text-muted-foreground">Side, fun projects.</p>
                     <div className="flex flex-col gap-4">
                         {SIDE_PROJECTS.map((project, index) =>(
                             <SideProject
@@ -25,7 +25,7 @@ export const Status = () => {
             </div>
             <div className="flex-[2] flex flex-col gap-4 w-full">
                 <Card className="p-4 flex-1 shadow-md">
-                <p className="text-lg text-muted-foreground" style={{ textShadow: "0 0px 10px rgba(0, 255, 255, 0.4)" }}>Works</p>
+                <p className="text-lg text-muted-foreground" >Works</p>
                 <div className="flex flex-col gap-4">
                         {WORKS.map((work, index) =>(
                             <Work
@@ -36,7 +36,7 @@ export const Status = () => {
                     </div>
                 </Card>
                 <Card className="p-4 flex-1 flex flex-col gap-2 shadow-md">
-                    <p className="text-lg text-muted-foreground" style={{ textShadow: "0 0px 10px rgba(0, 255, 255, 0.4)" }}>Follow me</p>
+                    <p className="text-lg text-muted-foreground" >Follow me</p>
                     <ContactCard 
                         className="flex-1"
                         url="https://www.linkedin.com/in/mikaelvery/"
