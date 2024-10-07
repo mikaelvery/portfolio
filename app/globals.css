@@ -14,7 +14,7 @@ body {
 
 @layer base {
   :root {
-    --background: 200 19% 18%;
+    --background: 180, 20%, 18%;
     --foreground: 180 100% 97%;
     --muted: 200 12% 22%;
     --muted-foreground: 200 12% 72%;
