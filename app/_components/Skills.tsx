@@ -15,8 +15,8 @@ export const Skills = () => {
         <Section className="flex flex-col items-start gap-4">
             <Badge variant={"outline"}>Skills</Badge>
             <h2 
-                className="pb-2 text-3xl font-semibold tracking-tight first:mt-0" 
-                style={{ textShadow: "0 0 15px rgba(0, 255, 255, 0.6)" }}>
+                className="pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-[#ddc67a]" 
+                >
                 I love working on...
             </h2>
             <div className="flex max-md:flex-col gap-4">
@@ -28,7 +28,7 @@ export const Skills = () => {
                             animationDuration: "10s",
                         }}
                     /> 
-                    <h3 className="mb-2 text-2xl font-semibold tracking-tight">
+                    <h3 className="mb-2 text-2xl font-semibold tracking-tight text-[#efebe2]">
                         React
                     </h3>
                     <p className="text-sm text-muted-foreground">
@@ -39,7 +39,7 @@ export const Skills = () => {
                     <TailwindIcon 
                         size={42} 
                     /> 
-                    <h3 className="mb-2 text-2xl font-semibold tracking-tight">
+                    <h3 className="mb-2 text-2xl font-semibold tracking-tight text-[#efebe2]">
                         Tailwind
                     </h3>
                     <p className="text-sm text-muted-foreground">
@@ -50,7 +50,7 @@ export const Skills = () => {
                     <AngularIcon 
                         size={42} 
                     /> 
-                    <h3 className="mb-2 text-2xl font-semibold tracking-tight">
+                    <h3 className="mb-2 text-2xl font-semibold tracking-tight text-[#efebe2]">
                         Angular
                     </h3>
                     <p className="text-sm text-muted-foreground">
@@ -61,7 +61,7 @@ export const Skills = () => {
                     <SymfonyIcon 
                         size={42} 
                     /> 
-                    <h3 className="mb-2 text-2xl font-semibold tracking-tight">
+                    <h3 className="mb-2 text-2xl font-semibold tracking-tight text-[#efebe2]">
                         Symfony
                     </h3>
                     <p className="text-sm text-muted-foreground">
@@ -72,7 +72,7 @@ export const Skills = () => {
                     <HtmlIcon 
                         size={42} 
                     /> 
-                    <h3 className="mb-2 text-2xl font-semibold tracking-tight">
+                    <h3 className="mb-2 text-2xl font-semibold tracking-tight text-[#efebe2]">
                         Html
                     </h3>
                     <p className="text-sm text-muted-foreground">
@@ -83,7 +83,7 @@ export const Skills = () => {
                     <NodeJsIcon 
                         size={42} 
                     /> 
-                    <h3 className="mb-2 text-2xl font-semibold tracking-tight">
+                    <h3 className="mb-2 text-2xl font-semibold tracking-tight text-[#efebe2]">
                         NodeJs
                     </h3>
                     <p className="text-sm text-muted-foreground">
@@ -94,7 +94,7 @@ export const Skills = () => {
                     <CSharpIcon 
                         size={42} 
                     /> 
-                    <h3 className="mb-2 text-2xl font-semibold tracking-tight">
+                    <h3 className="mb-2 text-2xl font-semibold tracking-tight text-[#efebe2]">
                         .NET
                     </h3>
                     <p className="text-sm text-muted-foreground">
@@ -105,7 +105,7 @@ export const Skills = () => {
                     <FlutterIcon 
                         size={42} 
                     /> 
-                    <h3 className="mb-2 text-2xl font-semibold tracking-tight">
+                    <h3 className="mb-2 text-2xl font-semibold tracking-tight text-[#efebe2]">
                         Flutter
                     </h3>
                     <p className="text-sm text-muted-foreground">

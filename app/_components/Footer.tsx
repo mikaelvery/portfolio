@@ -11,10 +11,10 @@ export const Footer = () => {
 
         <div className="flex gap-6">
             <Link href="https://github.com/MikaelVery" target="_blank" rel="noopener noreferrer">
-                <GitHubLogoIcon className="w-6 h-6 text-muted-foreground hover:text-foreground transition-colors" />
+              <GitHubLogoIcon className="w-6 h-6 text-[#ddc67a] hover:text-[#efebe2] transition-colors duration-200" />
             </Link>
             <Link href="https://www.linkedin.com/in/mikaelvery/" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="w-6 h-6 text-muted-foreground hover:text-foreground transition-colors" />
+              <Linkedin className="w-6 h-6 text-[#ddc67a] hover:text-[#efebe2] transition-colors duration-200" />
             </Link>
         </div>
 
