@@ -14,7 +14,7 @@ export const Header = () => {
                     Mikael Very
                 </h1>                
                 <p className="text-xs text-muted-foreground m-2">
-                    Web Developer | Personal Portfolio
+                    Personal Portfolio
                 </p>                
                 <div className="flex-1" />
                 <ul className="flex items-center gap-2">

@@ -17,7 +17,7 @@ export const Status = () => {
                                 Logo={project.Logo}
                                 title={project.title}
                                 description={project.description}
-                                url="/"
+                                url={project.url}
                             />
                         ))}
                     </div>
@@ -48,7 +48,7 @@ export const Status = () => {
                     <ContactCard
                         className="flex-1"
                         url="mailto:mikael.very34@gmail.com"
-                        name="me@mikaelvery.com"
+                        name="contact@me.com"
                         image="https://media.licdn.com/dms/image/v2/D4E35AQF1tZI8G1LHwg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1722945642571?e=1728306000&v=beta&t=Y82xy_sOCb9PYddxwPL708shyRjmz1BKeXVWI_r11tY"
                         mediumImage="https://static.vecteezy.com/system/resources/previews/022/484/516/original/google-mail-gmail-icon-logo-symbol-free-png.png" 
                         description="Email me for any inquiries."
