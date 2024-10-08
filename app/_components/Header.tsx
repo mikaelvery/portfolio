@@ -11,11 +11,11 @@ export const Header = () => {
     return (
         <header className=" bg-card top-0 py-4">
             <Section className="flex items-baseline relative">
-                <div className="absolute left-1/2 transform -translate-x-1/2 -top-7 w-32 h-32 rounded-full shadow-md flex items-center justify-center">
+                <div className="absolute left-1/2 transform -translate-x-1/2 -top-7 w-31 h-31 rounded-full shadow-md flex items-center justify-center">
                     <Image
                         src="/mv.png"
-                        width={150}
-                        height={150}
+                        width={125}
+                        height={125}
                         alt="Logo MV"
                         className="rounded-full"
                     />
