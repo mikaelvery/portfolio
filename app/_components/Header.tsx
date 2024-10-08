@@ -14,8 +14,8 @@ export const Header = () => {
                 <div className="absolute left-1/2 transform -translate-x-1/2 -top-7 w-31 h-31 rounded-full shadow-md flex items-center justify-center">
                     <Image
                         src="/mv.png"
-                        width={125}
-                        height={125}
+                        width={123}
+                        height={123}
                         alt="Logo MV"
                         className="rounded-full"
                     />
