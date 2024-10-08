@@ -1,5 +1,4 @@
 import { Section } from "./Section";
-import { NextJsIcon } from "./icons/NextJsIcon";
 import Link from "next/link";
 import Image from "next/image";
 import { Code } from "./Code";
