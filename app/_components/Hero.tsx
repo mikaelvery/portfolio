@@ -24,7 +24,7 @@ export const Hero = () => {
                             <Image
                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/110px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%93present%29.svg.png"
                                 width={16}
-                                height={16}
+                                height={11}
                                 alt="French flag"
                             />
                             Montpellier
@@ -47,7 +47,7 @@ export const Hero = () => {
             </div>
             <div className="flex-[1] max-md:m-auto ml-auto">
                 <Image
-                    src="https://pbs.twimg.com/profile_images/1624453066916261892/mk0g02MB_400x400.jpg"
+                    src="/me.jpg"
                     className="w-full h-auto max-w-xs rounded-full max-md:w-56"
                     width={200}
                     height={200}
