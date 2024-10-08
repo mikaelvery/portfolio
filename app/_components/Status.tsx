@@ -10,7 +10,7 @@ export const Status = () => {
             <div className="flex-[2] flex flex-col gap-4 w-full">
                 <Card className="w-full p-4 flex flex-col gap-2 shadow-lg border border-[#efebe2] rounded-md">
                     <p className="text-lg font-semibold text-[#ddc67a]">Side, fun projects.</p>
-                    <div className="flex flex-col gap-4">
+                    <div className="flex flex-col gap-4 ">
                         {SIDE_PROJECTS.map((project, index) => (
                             <SideProject
                                 key={index}
