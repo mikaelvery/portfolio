@@ -1,3 +1,4 @@
+import ApplicationGallery from "./_components/ApplicationGallery";
 import { Contact } from "./_components/Contact";
 import { Footer } from "./_components/Footer";
 import { Header } from "./_components/Header";
@@ -14,6 +15,8 @@ export default function Home() {
       <Hero />
         <Spacing size="md" />
       <Status />
+        <Spacing size="md" />
+      <ApplicationGallery />
         <Spacing size="md" />
       <Skills />
         <Spacing size="md" />
