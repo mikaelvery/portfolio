@@ -17,7 +17,7 @@ export const Contact = () => {
                     name="Mikael Very" 
                     image="/me.jpg"
                     mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/900px-LinkedIn_logo_initials.png" 
-                    description="66 contacts"
+                    description="71 contacts"
                 />
                 <ContactCard 
                     url="mailto:mikael.very34@gmail.com"
