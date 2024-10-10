@@ -18,6 +18,7 @@ export const Status = () => {
                                 title={project.title}
                                 description={project.description}
                                 url={project.url}
+                                badge={project.badge}
                             />
                         ))}
                     </div>
