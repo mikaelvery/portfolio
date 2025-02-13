@@ -22,7 +22,7 @@ export const Hero = () => {
                     <Link href="https://www.linkedin.com/in/mikaelvery/" passHref>
                         <Code className="inline-flex items-center gap-1">
                             <Image
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/110px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%93present%29.svg.png"
+                                src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_France_%281976%E2%80%932020%29.svg"
                                 width={16}
                                 height={11}
                                 alt="French flag"
