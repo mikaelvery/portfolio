@@ -1,9 +1,12 @@
-// app/api/auth/callback/route.ts
 import axios from 'axios';
 
 export async function GET(req: Request) {
   const url = new URL(req.url);
-  const code = url.searchParams.get('code'); // Récupérer le code d'autorisation depuis l'URL
+  const code = url.searchParams.get('code');
+  const redirectUri = process.env.API_CALLBACK_URL;  // ou l'URL fournie par Twitch
+
+  console.log(`Received code: ${code}`);
+  console.log(`Redirect URI: ${redirectUri}`);
 
   if (!code) {
     return new Response('Code missing', { status: 400 });
@@ -16,7 +19,7 @@ export async function GET(req: Request) {
         client_secret: process.env.TWITCH_CLIENT_SECRET,
         code,
         grant_type: 'authorization_code',
-        redirect_uri: process.env.API_CALLBACK_URL,
+        redirect_uri: redirectUri,
       },
     });
 
@@ -25,7 +28,7 @@ export async function GET(req: Request) {
     // Retourner un message de succès ou rediriger vers une autre page si nécessaire
     return new Response(JSON.stringify({ message: 'Success', accessToken }), { status: 200 });
   } catch (error) {
-    console.error(error);
+    console.error('Error during token exchange:', error);
     return new Response('Internal Server Error', { status: 500 });
   }
 }
