@@ -1,4 +1,3 @@
-// app/auth/callback.tsx
 "use client";
 
 import { useEffect, useState } from "react";
@@ -12,14 +11,29 @@ const Callback = () => {
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
-    const token = urlParams.get("access_token");
-    if (token) {
-      setAccessToken(token);
+    const code = urlParams.get("code");
+
+    if (!code) {
+      setError("Code missing");
       setLoading(false);
-    } else {
-      setError("Authentication failed or token missing.");
-      setLoading(false);
+      return;
     }
+
+    // Envoie du code d'autorisation au serveur pour obtenir le token d'accès
+    fetch("/api/auth/callback?code=" + code)
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.accessToken) {
+          setAccessToken(data.accessToken);
+        } else {
+          setError("Failed to obtain access token");
+        }
+        setLoading(false);
+      })
+      .catch(() => {
+        setError("An error occurred while fetching the access token");
+        setLoading(false);
+      });
   }, []);
 
   if (loading) {
