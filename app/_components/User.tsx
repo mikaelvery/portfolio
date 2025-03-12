@@ -15,24 +15,30 @@ const UserProfile = ({ accessToken }: { accessToken: string }) => {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    const fetchUserInfo = async () => {
+    const fetchUserInfo = async (accessToken: string) => {
+      setLoading(true); // Mettre l'état de "loading" à true avant de commencer la requête
       try {
-        const response = await axios.get('/api/twitch/user', {
-          params: { accessToken }
+        const response = await axios.get('https://api.twitch.tv/helix/users', {
+          headers: {
+            'Authorization': `Bearer ${accessToken}`, // Ajouter le token dans l'en-tête Authorization
+            'Client-ID': 'wv2ca4japmzv57lyxxnckb4aecaotb', // Utiliser ton Client-ID ici
+          }
         });
-        setUserInfo(response.data);
+        setUserInfo(response.data); // Mettre à jour userInfo avec la réponse de l'API
       } catch (error) {
-        setError('Error fetching user data');
+        setError('Error fetching user data'); // Mettre à jour l'état de l'erreur
       } finally {
-        setLoading(false);
+        setLoading(false); // Mettre l'état de "loading" à false une fois la requête terminée
       }
     };
 
-    fetchUserInfo();
+    if (accessToken) {
+      fetchUserInfo(accessToken);
+    }
   }, [accessToken]);
 
   if (loading) return <p>Loading...</p>;
-  if (error) return <p>{error}</p>; // Utilisation de la variable error
+  if (error) return <p>{error}</p>; // Affichage de l'erreur
 
   const profileImageUrl = userInfo?.data[0]?.profile_image_url;
 
