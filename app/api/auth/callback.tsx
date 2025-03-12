@@ -11,29 +11,14 @@ const Callback = () => {
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
-    const code = urlParams.get("code");
-
-    if (!code) {
-      setError("Code missing");
+    const token = urlParams.get("access_token");
+    if (token) {
+      setAccessToken(token);
       setLoading(false);
-      return;
+    } else {
+      setError("Authentication failed or token missing.");
+      setLoading(false);
     }
-
-    // Envoie du code d'autorisation au serveur pour obtenir le token d'accès
-    fetch("/api/auth/callback?code=" + code)
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.accessToken) {
-          setAccessToken(data.accessToken);
-        } else {
-          setError("Failed to obtain access token");
-        }
-        setLoading(false);
-      })
-      .catch(() => {
-        setError("An error occurred while fetching the access token");
-        setLoading(false);
-      });
   }, []);
 
   if (loading) {
